@@ -103,6 +103,10 @@ form textarea {
   color: var(--secondary);
 }
 
+form label span {
+  margin-bottom: 10px;
+}
+
 /* careers list */
 
 /* careers details */
