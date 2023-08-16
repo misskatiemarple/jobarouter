@@ -77,6 +77,12 @@ help-layout nav a.active {
 }
 
 /* faq */
+.faq .question {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 5px 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
 
 /* careers list */
 
