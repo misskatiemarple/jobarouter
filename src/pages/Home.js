@@ -3,7 +3,7 @@ import React from "react";
 export default function home() {
   return (
     <div className="home">
-      <h1>Hello about</h1>
+      <h1>Home</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
