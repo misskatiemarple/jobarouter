@@ -29,7 +29,7 @@ const router = createBrowserRouter(
         <Route path="contact" element={<Contact />} />
       </Route>
 
-      <Route path="*" element={NotFound} />
+      <Route path="*" element={<NotFound />} />
     </Route>
   )
 );
