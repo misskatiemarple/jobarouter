@@ -14,7 +14,9 @@ import Faq from "./pages/help/Faq";
 import Contact from "./pages/help/Contact";
 import NotFound from "./pages/NotFound";
 import Careers, { careersLoader } from "./pages/careers/Careers";
-import CareerDetails from "./pages/careers/CareerDetails";
+import CareerDetails, {
+  careerDetailsLoader,
+} from "./pages/careers/CareerDetails";
 
 //layouts
 import RootLayout from "./layouts/RootLayout";
@@ -31,11 +33,15 @@ const router = createBrowserRouter(
         <Route path="faq" element={<Faq />} />
         <Route path="contact" element={<Contact />} />
       </Route>
+
       <Route path="careers" element={<CareersLayout />}>
         <Route index element={<Careers />} loader={careersLoader} />
+        <Route
+          path=":id"
+          element={<CareerDetails />}
+          loader={careerDetailsLoader}
+        />{" "}
       </Route>
-
-      <Route path=":id" element={<CareerDetails />} />
 
       <Route path="*" element={<NotFound />} />
     </Route>
