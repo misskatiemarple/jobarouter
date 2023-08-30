@@ -151,6 +151,9 @@ form label span {
 .breadcrumbs .crumb:last-child:after {
   display: none;
 }
+.breadcrumbs .crumb:first-child:after {
+  display: none;
+}
 .breadcrumbs .crumb a {
   color: #ddd;
 }
